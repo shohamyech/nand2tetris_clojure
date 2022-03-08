@@ -1,0 +1,360 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: cmd.exe /d /c lein update-in :dependencies conj [nrepl,"0.9.0"] -- update-in :plugins conj [cider/cider-nrepl,"0.27.4"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉ex01.core꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉ex01.core꞉> 
+; Evaluating file: core.clj
+#'ex01.core/-main
+clj꞉ex01.core꞉> 
+"@7\nD=A\n@SP\nA=M\nM=D \n@SP\nM=M+1"
+clj꞉ex01.core꞉> 
+"@1\nD=A\n@lcl\nA=M+D\nDEM\n@SP\nA=M\nMED\n@SP\nM=M+1"
+clj꞉ex01.core꞉> 
+; Syntax error compiling at (c:\Users\shoha\Desktop\SoftwarePrinciples\nand2tetris_clojure\ex01\src\ex01\core.clj:7:1).
+; No such var: commands/add
+clj꞉ex01.core꞉> 
+; Evaluating file: commands.clj
+#'ex01.commands/add
+clj꞉ex01.commands꞉> 
+; Execution error (ClassCastException) at ex01.commands/add (commands.clj:31).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉ex01.core꞉> 
+; Evaluating file: commands.clj
+#'ex01.commands/add
+clj꞉ex01.commands꞉> 
+"@SP\n    A=M-1\n    D=M\n    A=A-1\n    M=M+D\n    @SP\n    M=M-1"
+clj꞉ex01.core꞉> 
+; Evaluating file: commands.clj
+#'ex01.commands/add
+clj꞉ex01.commands꞉> 
+"@SP\nA=M-1\nD=M\nA=A-1\nM=M+D\n@SP\nM=M-1"
+clj꞉ex01.core꞉> 
+; Evaluating file: core.clj
+; Syntax error compiling at (C:\Users\shoha\Desktop\SoftwarePrinciples\nand2tetris_clojure\ex01\src\ex01\core.clj:17:8).
+; Unable to resolve symbol: buy-or-sell in this context
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: core.clj
+#'ex01.core/-main
+clj꞉ex01.core꞉> 
+(-main)
+Enter path
+C:\Users\shoha\Desktop\SoftwarePrinciples\nand2tetris\nand2tetris\projects\07\StackArithmetic\SimpleAdd
+Invalid path
+; nREPL Connection was closed
+; Jacking in...
+; Starting Jack-in Terminal: cmd.exe /d /c lein update-in :dependencies conj [nrepl,"0.9.0"] -- update-in :plugins conj [cider/cider-nrepl,"0.27.4"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉ex01.core꞉> 
+; Jack-in done.
+clj꞉ex01.core꞉> 
+(-main)
+Enter path
+"Finished!"
+clj꞉ex01.core꞉> 
+; Evaluating file: core.clj
+#'ex01.core/-main
+clj꞉ex01.core꞉> 
+(-main)
+Enter path
+"Finished!"
+clj꞉ex01.core꞉> 
+; Evaluating file: core.clj
+#'ex01.core/-main
+clj꞉ex01.core꞉> 
+; Evaluating file: core.clj
+#'ex01.core/-main
+clj꞉ex01.core꞉> 
+(-main)
+Enter path
+"Finished!"
+clj꞉ex01.core꞉> 
+; Evaluating file: core.clj
+#'ex01.core/-main
+clj꞉ex01.core꞉> 
+(-main)
+Enter path
+"Finished!"
+clj꞉ex01.core꞉> 
+; Evaluating file: core.clj
+#'ex01.core/-main
+clj꞉ex01.core꞉> 
+(-main)
+Enter path
+"Finished!"
+clj꞉ex01.core꞉> 
+; Evaluating file: commands.clj
+#'ex01.commands/add
+clj꞉ex01.commands꞉> 
+; Evaluating file: core.clj
+#'ex01.core/-main
+clj꞉ex01.core꞉> 
+(-main)
+Enter path
+"Finished!"
+clj꞉ex01.core꞉> 
+; Evaluating file: core.clj
+#'ex01.core/-main
+clj꞉ex01.core꞉> 
+(-main)
+Enter path
+"Finished!"
+clj꞉ex01.core꞉> 
+; Evaluating file: commands.clj
+#'ex01.commands/add
+clj꞉ex01.commands꞉> 
+; Evaluating file: core.clj
+#'ex01.core/-main
+clj꞉ex01.core꞉> 
+(-main)
+Enter path
+"Finished!"
+clj꞉ex01.core꞉> 
+; Evaluating file: commands.clj
+#'ex01.commands/add
+clj꞉ex01.commands꞉> 
+(-main)
+; Syntax error compiling at (c:\Users\shoha\Desktop\SoftwarePrinciples\nand2tetris_clojure\ex01\.calva\output-window\output.calva-repl:138:1).
+; Unable to resolve symbol: -main in this context
+clj꞉ex01.commands꞉> 
+; Evaluating file: core.clj
+#'ex01.core/-main
+clj꞉ex01.core꞉> 
+(-main)
+Enter path
+"Finished!"
+clj꞉ex01.core꞉> 
+; Evaluating file: commands.clj
+#'ex01.commands/add
+clj꞉ex01.commands꞉> 
+; Evaluating file: core.clj
+#'ex01.core/-main
+clj꞉ex01.core꞉> 
+(-main)
+Enter path
+"Finished!"
+clj꞉ex01.core꞉> 
+"//push 5\n@5\nD=A\nex01.commands$pushD@f84aa87"
+clj꞉ex01.core꞉> 
+; Evaluating file: commands.clj
+#'ex01.commands/add
+clj꞉ex01.commands꞉> 
+"//push 5\n@5\nD=A\n@SP\nA=M\nM=D \n@SP\nM=M+1\n\n"
+clj꞉ex01.core꞉> 
+; Evaluating file: commands.clj
+; Syntax error compiling at (C:\Users\shoha\Desktop\SoftwarePrinciples\nand2tetris_clojure\ex01\src\ex01\commands.clj:32:3).
+; Unable to resolve symbol: D in this context
+; Evaluation of file commands.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: commands.clj
+#'ex01.commands/add
+clj꞉ex01.commands꞉> 
+; Evaluating file: core.clj
+#'ex01.core/-main
+clj꞉ex01.core꞉> 
+(-main)
+Enter path
+"Finished!"
+clj꞉ex01.core꞉> 
+; Evaluating file: commands.clj
+#'ex01.commands/add
+clj꞉ex01.commands꞉> 
+; Evaluating file: core.clj
+#'ex01.core/-main
+clj꞉ex01.core꞉> 
+(-main)
+Enter path
+"Finished!"
+clj꞉ex01.core꞉> 
+; Evaluating file: commands.clj
+#'ex01.commands/add
+clj꞉ex01.commands꞉> 
+; Evaluating file: commands.clj
+#'ex01.commands/Not
+clj꞉ex01.commands꞉> 
+; Evaluating file: commands.clj
+#'ex01.commands/Not
+clj꞉ex01.commands꞉> 
+; Evaluating file: core.clj
+#'ex01.core/-main
+clj꞉ex01.core꞉> 
+(-main)
+Enter path
+"Finished!"
+clj꞉ex01.core꞉> 
+; Evaluating file: core.clj
+#'ex01.core/-main
+clj꞉ex01.core꞉> 
+(-main)
+Enter path
+"Finished!"
+clj꞉ex01.core꞉> 
+; Evaluating file: commands.clj
+#'ex01.commands/Not
+clj꞉ex01.commands꞉> 
+; Evaluating file: core.clj
+#'ex01.core/-main
+clj꞉ex01.core꞉> 
+(-main)
+Enter path
+; Execution error (IllegalStateException) at ex01.commands/eq (commands.clj:149).
+; Can't change/establish root binding of: True with set
+clj꞉ex01.core꞉> 
+(def foo (atom 5.0))
+(swap! foo (partial + 0.1))
+; Syntax error compiling at (c:\Users\shoha\Desktop\SoftwarePrinciples\nand2tetris_clojure\ex01\.calva\output-window\output.calva-repl:225:1).
+; Unable to resolve symbol: foo in this context
+clj꞉ex01.core꞉> 
+(def foo (atom 5))
+#'ex01.core/foo
+clj꞉ex01.core꞉> 
+(println foo)
+#atom[5 0x582df5]
+nil
+clj꞉ex01.core꞉> 
+(str foo)
+"clojure.lang.Atom@582df5"
+clj꞉ex01.core꞉> 
+(println @foo)
+5
+nil
+clj꞉ex01.core꞉> 
+(str @foo)
+"5"
+clj꞉ex01.core꞉> 
+(swap! foo 4)
+; Execution error (ClassCastException) at ex01.core/eval8713 (form-init3363309500573630373.clj:246).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉ex01.core꞉> 
+(swap! foo inc)
+6
+clj꞉ex01.core꞉> 
+(@foo)
+; Execution error (ClassCastException) at ex01.core/eval8717 (form-init3363309500573630373.clj:253).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉ex01.core꞉> 
+(str @foo)
+"6"
+clj꞉ex01.core꞉> 
+; Evaluating file: commands.clj
+#'ex01.commands/Not
+clj꞉ex01.commands꞉> 
+(-main)
+; Syntax error compiling at (c:\Users\shoha\Desktop\SoftwarePrinciples\nand2tetris_clojure\ex01\.calva\output-window\output.calva-repl:263:1).
+; Unable to resolve symbol: -main in this context
+clj꞉ex01.commands꞉> 
+; Evaluating file: core.clj
+#'ex01.core/-main
+clj꞉ex01.core꞉> 
+(-main)
+Enter path
+"Finished!"
+clj꞉ex01.core꞉> 
+; Evaluating file: commands.clj
+#'ex01.commands/Not
+clj꞉ex01.commands꞉> 
+; Evaluating file: core.clj
+#'ex01.core/-main
+clj꞉ex01.core꞉> 
+(-main)
+Enter path
+"Finished!"
+clj꞉ex01.core꞉> 
+(-main)
+Enter path
+"Finished!"
+clj꞉ex01.core꞉> 
+; Evaluating file: commands.clj
+#'ex01.commands/Not
+clj꞉ex01.commands꞉> 
+; Evaluating file: core.clj
+#'ex01.core/-main
+clj꞉ex01.core꞉> 
+(-main)
+Enter path
+"Finished!"
+clj꞉ex01.core꞉> 
+; Evaluating file: commands.clj
+#'ex01.commands/Not
+clj꞉ex01.commands꞉> 
+; Evaluating file: core.clj
+#'ex01.core/-main
+clj꞉ex01.core꞉> 
+(-main)
+Enter path
+; Execution error (ClassCastException) at ex01.commands/pop-temp (commands.clj:85).
+; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+clj꞉ex01.core꞉> 
+; Evaluating file: commands.clj
+#'ex01.commands/Not
+clj꞉ex01.commands꞉> 
+; Evaluating file: core.clj
+#'ex01.core/-main
+clj꞉ex01.core꞉> 
+(-main)
+Enter path
+"Finished!"
+clj꞉ex01.core꞉> 
+(-main)
+Enter path
+"Finished!"
+clj꞉ex01.core꞉> 
+(-main)
+Enter path
+"Finished!"
+clj꞉ex01.core꞉> 
+; Evaluating file: commands.clj
+#'ex01.commands/Not
+clj꞉ex01.commands꞉> 
+; Evaluating file: core.clj
+#'ex01.core/-main
+clj꞉ex01.core꞉> 
+(-main)
+Enter path
+"Finished!"
+clj꞉ex01.core꞉> 
+(files-names "C:\Users\shoha\Desktop\SoftwarePrinciples\nand2tetris\nand2tetris\projects\07\MemoryAccess\StaticTest")
+; Syntax error reading source at (REPL:337:19).
+; Unsupported escape character: \U
+clj꞉ex01.core꞉> 
+(files-names "C:\\Users\\shoha\\Desktop\\SoftwarePrinciples\\nand2tetris\\nand2tetris\\projects\\07\\MemoryAccess\\StaticTest")
+("StaticTest")
+clj꞉ex01.core꞉> 
+; Evaluating file: core.clj
+#'ex01.core/-main
+clj꞉ex01.core꞉> 
+(-main)
+Enter path
+"Finished!"
+clj꞉ex01.core꞉> 
+; Evaluating file: commands.clj
+#'ex01.commands/Not
+clj꞉ex01.commands꞉> 
+; Evaluating file: core.clj
+#'ex01.core/-main
+clj꞉ex01.core꞉> 
+(-main)
+Enter path
+"Finished!"
+clj꞉ex01.core꞉> 
