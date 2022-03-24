@@ -1,0 +1,66 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: cmd.exe /d /c lein update-in :dependencies conj [nrepl,"0.9.0"] -- update-in :plugins conj [cider/cider-nrepl,"0.27.4"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉ex02.core꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉ex02.core꞉> 
+(print ["a" "b" "c"])
+[a b c]
+nil
+clj꞉ex02.core꞉> 
+(get '(1 2 3) 2)
+nil
+clj꞉ex02.core꞉> 
+(get [1 2 3] 2)
+3
+clj꞉ex02.core꞉> 
+(drop [1 2 3] 1)
+; Error printing return value (IllegalArgumentException) at clojure.lang.RT/seqFrom (RT.java:557).
+; Don't know how to create ISeq from: java.lang.Long
+clj꞉ex02.core꞉> 
+(drop 1 [1 2 3])
+(2 3)
+clj꞉ex02.core꞉> 
+(get (drop 1 [1 2 3]) 1)
+nil
+clj꞉ex02.core꞉> 
+(nth (drop 1 [1 2 3]) 1)
+3
+clj꞉ex02.core꞉> 
+(call "boo" 4 "pizza")
+; Syntax error compiling at (c:\Users\shoha\Desktop\SoftwarePrinciples\nand2tetris_clojure\ex02\.calva\output-window\output.calva-repl:44:1).
+; Unable to resolve symbol: call in this context
+clj꞉ex02.core꞉> 
+; Evaluating file: commands.clj
+#'ex02.commands/call
+clj꞉ex02.commands꞉> 
+(call "boo" 4 "pizza")
+"//call function boo 4\n//push RETclojure.lang.Atom@6e9bc9c8\n@RETclojure.lang.Atom@6e9bc9c8\nD=A\n@SP\nA=M\nM=D\n@SP\nM=M+1\n\n\n@LCL\nD=M\n@SP\nA=M\nM=D\n@SP\nM=M+1\n\n\n@ARG\nD=M\n@SP\nA=M\nM=D\n@SP\nM=M+1\n\n\n@THIS\nD=M\n@SP\nA=M\nM=D\n@SP\nM=M+1\n\n\n@THAT\nD=M\n@SP\nA=M\nM=D\n@SP\nM=M+1\n\n\n@SP\nD=M\n@SP\nA=M\nM=D\n@SP\nM=M+1\n\n//push 5\n@5\nD=A\n@SP\nA=M\nM=D\n@SP\nM=M+1\n\n//sub\n@SP\nA=M-1\nD=M\nA=A-1\nM=M-D\n@SP\nM=M-1\n\n@4\nD=A\n@SP\nA=M\nM=D\n@SP\nM=M+1\n\n//sub\n@SP\nA=M-1\nD=M\nA=A-1\nM=M-D\n@SP\nM=M-1\n\n@SP\nAM=M-1\nD=M\n@ARG\nM=D\n@SP\nD=M\n@LCL\nM=D\n//goto pizza_boo\n@pizza_boo\n0;JMP\n\n//label pizza_RETclojure.lang.Atom@6e9bc9c8\n(pizza_RETclojure.lang.Atom@6e9bc9c8)\n\n"
+clj꞉ex02.commands꞉> 
+; Syntax error compiling at (c:\Users\shoha\Desktop\SoftwarePrinciples\nand2tetris_clojure\ex02\src\ex02\core.clj:99:1).
+; Unable to resolve symbol: call in this context
+clj꞉ex02.core꞉> 
+; Evaluating file: commands.clj
+#'ex02.commands/call
+clj꞉ex02.commands꞉> 
+; Syntax error compiling at (c:\Users\shoha\Desktop\SoftwarePrinciples\nand2tetris_clojure\ex02\src\ex02\core.clj:100:2).
+; Unable to resolve symbol: call in this context
+clj꞉ex02.core꞉> 
+9
+clj꞉ex02.core꞉> 
+9
+clj꞉ex02.core꞉> 
