@@ -1,0 +1,570 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: cmd.exe /d /c lein update-in :dependencies conj [nrepl,"0.9.0"] -- update-in :plugins conj [cider/cider-nrepl,"0.27.4"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉ex03.core꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉ex03.core꞉> 
+; Evaluating file: core.clj
+(nil nil nil)
+clj꞉ex03.core꞉> 
+; Evaluating file: core.clj
+; Error printing return value (IllegalArgumentException) at clojure.lang.RT/seqFrom (RT.java:557).
+; Don't know how to create ISeq from: ex03.core$tokenize$fn__6106
+; Evaluation of file core.clj failed: class clojure.lang.ExceptionInfo
+clojure.main/repl (main.clj:442)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉ex03.core꞉> 
+; Execution error (IllegalArgumentException) at ex03.core/tokenize (core.clj:9).
+; Don't know how to create ISeq from: ex03.core$tokenize$fn__6106
+clj꞉ex03.core꞉> 
+; Execution error (IllegalArgumentException) at ex03.core/tokenize (core.clj:9).
+; Don't know how to create ISeq from: ex03.core$tokenize$fn__6106
+clj꞉ex03.core꞉> 
+"<tokens>\n\n</tokens>hehe"
+clj꞉ex03.core꞉> 
+#function[ex03.core/eval6167/fn--6168]
+clj꞉ex03.core꞉> 
+"ex03.core$eval6173$fn__6174@4e66d698"
+clj꞉ex03.core꞉> 
+"ex03.core$eval6179$fn__6180@4244a78a"
+clj꞉ex03.core꞉> 
+; Execution error (IllegalArgumentException) at ex03.core/eval6185 (form-init15316997710959523030.clj:36).
+; Don't know how to create ISeq from: ex03.core$eval6185$fn__6186
+clj꞉ex03.core꞉> 
+#function[ex03.core/eval6191/fn--6192]
+clj꞉ex03.core꞉> 
+; Syntax error compiling at (c:\Users\shoha\Desktop\SoftwarePrinciples\nand2tetris_clojure\ex03\src\ex03\core.clj:36:6).
+; Unable to resolve symbol: runall in this context
+clj꞉ex03.core꞉> 
+; Execution error (IllegalArgumentException) at ex03.core/eval6200 (form-init15316997710959523030.clj:36).
+; Don't know how to create ISeq from: ex03.core$eval6200$fn__6201
+clj꞉ex03.core꞉> 
+("<tokens>\nh\n</tokens>" "<tokens>\ne\n</tokens>" "<tokens>\nh\n</tokens>" "<tokens>\ne\n</tokens>")
+clj꞉ex03.core꞉> 
+("<tokens>\nk\n</tokens>")
+clj꞉ex03.core꞉> 
+"k"
+clj꞉ex03.core꞉> 
+; Syntax error compiling at (c:\Users\shoha\Desktop\SoftwarePrinciples\nand2tetris_clojure\ex03\src\ex03\core.clj:35:6).
+; Unable to resolve symbol: % in this context
+clj꞉ex03.core꞉> 
+"<tokens>\nk\n</tokens>"
+clj꞉ex03.core꞉> 
+; Evaluating file: core.clj
+; Error printing return value (ClassCastException) at ex03.core/tokenize (core.clj:7).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+; Evaluation of file core.clj failed: class clojure.lang.ExceptionInfo
+clojure.main/repl (main.clj:442)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉ex03.core꞉> 
+; Execution error (ClassCastException) at ex03.core/tokenize (core.clj:7).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉ex03.core꞉> 
+; Execution error (ClassCastException) at ex03.core/eval6270 (form-init15316997710959523030.clj:34).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉ex03.core꞉> 
+"<tokens>\naaa\n</tokens>"
+clj꞉ex03.core꞉> 
+; Evaluating file: core.clj
+"<tokens>\naaa\n</tokens>"
+clj꞉ex03.core꞉> 
+; Evaluating file: core.clj
+(nil nil nil)
+clj꞉ex03.core꞉> 
+; Evaluating file: core.clj
+; Syntax error compiling at (C:\Users\shoha\Desktop\SoftwarePrinciples\nand2tetris_clojure\ex03\src\ex03\core.clj:8:10).
+; Unable to resolve symbol: file in this context
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6812)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3892)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7113)
+clojure.lang.Compiler/analyze (Compiler.java:6793)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6124)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5471)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4033)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7109)
+clojure.lang.Compiler/analyze (Compiler.java:6793)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3824)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7113)
+clojure.lang.Compiler/analyze (Compiler.java:6793)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3892)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7113)
+clojure.lang.Compiler/analyze (Compiler.java:6793)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7099)
+clojure.lang.Compiler/analyze (Compiler.java:6793)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6124)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5471)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4033)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7109)
+clojure.lang.Compiler/analyze (Compiler.java:6793)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7099)
+clojure.lang.Compiler/analyze (Compiler.java:6793)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7111)
+clojure.lang.Compiler/analyze (Compiler.java:6793)
+clojure.lang.Compiler/eval (Compiler.java:7185)
+clojure.lang.Compiler/load (Compiler.java:7640)
+ex03.core/eval6366 (form-init15316997710959523030.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7181)
+clojure.core/eval (core.clj:3202)
+clojure.core/eval (core.clj:3198)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1977)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉ex03.core꞉> 
+"bla // aaa"
+clj꞉ex03.core꞉> 
+"bla \\ aaa"
+clj꞉ex03.core꞉> 
+"bla  aaa"
+clj꞉ex03.core꞉> 
+"bla "
+clj꞉ex03.core꞉> 
+"bla \nbobo"
+clj꞉ex03.core꞉> 
+; Evaluating file: core.clj
+; Syntax error compiling at (C:\Users\shoha\Desktop\SoftwarePrinciples\nand2tetris_clojure\ex03\src\ex03\core.clj:8:10).
+; Unable to resolve symbol: file in this context
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6812)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3892)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7113)
+clojure.lang.Compiler/analyze (Compiler.java:6793)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6124)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5471)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4033)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7109)
+clojure.lang.Compiler/analyze (Compiler.java:6793)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3824)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7113)
+clojure.lang.Compiler/analyze (Compiler.java:6793)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3892)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7113)
+clojure.lang.Compiler/analyze (Compiler.java:6793)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7099)
+clojure.lang.Compiler/analyze (Compiler.java:6793)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6124)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5471)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4033)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7109)
+clojure.lang.Compiler/analyze (Compiler.java:6793)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7099)
+clojure.lang.Compiler/analyze (Compiler.java:6793)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7111)
+clojure.lang.Compiler/analyze (Compiler.java:6793)
+clojure.lang.Compiler/eval (Compiler.java:7185)
+clojure.lang.Compiler/load (Compiler.java:7640)
+ex03.core/eval6397 (form-init15316997710959523030.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7181)
+clojure.core/eval (core.clj:3202)
+clojure.core/eval (core.clj:3198)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1977)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉ex03.core꞉> 
+; Evaluating file: core.clj
+(nil nil nil)
+clj꞉ex03.core꞉> 
+; Evaluating file: core.clj
+(nil nil nil)
+clj꞉ex03.core꞉> 
+; Evaluating file: core.clj
+(nil nil nil)
+clj꞉ex03.core꞉> 
+["" " " " "]
+clj꞉ex03.core꞉> 
+["" " ab" " \"haha\""]
+clj꞉ex03.core꞉> 
+; Syntax error compiling at (c:\Users\shoha\Desktop\SoftwarePrinciples\nand2tetris_clojure\ex03\src\ex03\core.clj:35:1).
+; No such var: str/findall
+clj꞉ex03.core꞉> 
+; Execution error (ClassCastException) at ex03.core/eval6538 (form-init15316997710959523030.clj:35).
+; class java.lang.String cannot be cast to class java.util.regex.Pattern (java.lang.String and java.util.regex.Pattern are in module java.base of loader 'bootstrap')
+clj꞉ex03.core꞉> 
+"1234"
+clj꞉ex03.core꞉> 
+("1234" "31")
+clj꞉ex03.core꞉> 
+("1234" "ab31" "\"haha\"")
+clj꞉ex03.core꞉> 
+("1234" "ab31" "haha")
+clj꞉ex03.core꞉> 
+; Syntax error reading source at (REPL:36:47).
+; Unsupported character: \"haha
+clj꞉ex03.core꞉> 
+; Syntax error reading source at (REPL:9:4).
+; Unsupported escape character: \d
+clj꞉ex03.core꞉> 
+; Syntax error reading source at (REPL:11:8).
+; Unsupported escape character: \-
+clj꞉ex03.core꞉> 
+#'ex03.core/token
+clj꞉ex03.core꞉> 
+#"\d+|"
+clj꞉ex03.core꞉> 
+; Syntax error reading source at (REPL:10:5).
+; Unsupported escape character: \w
+clj꞉ex03.core꞉> 
+; Syntax error reading source at (REPL:10:8).
+; Unsupported escape character: \-
+clj꞉ex03.core꞉> 
+#"\d+|[\w\-]+"
+clj꞉ex03.core꞉> 
+#"\d+|[\w\-]+\"[^\"
+]*\""
+clj꞉ex03.core꞉> 
+#"\d+|[\w\-]+|\"[^\"
+]*\""
+clj꞉ex03.core꞉> 
+#"\d+|[\w\-]+|\"[^\"\n]*\""
+clj꞉ex03.core꞉> 
+; Execution error (PatternSyntaxException) at java.util.regex.Pattern/error (Pattern.java:2028).
+; Illegal repetition near index 23
+\d+|[\w\-]+|"[^"\n]*"|{}()[].,;+-*/&|<>=~|class|method|function|constructor|int|boolean|char|void|var|static|field|let|do|if|else|while|return|true|false|null|this|
+                       ^
+clj꞉ex03.core꞉> 
+#"\d+|[\w\-]+|\"[^\"\n]*\"|class|method|function|constructor|int|boolean|char|void|var|static|field|let|do|if|else|while|return|true|false|null|this|"
+clj꞉ex03.core꞉> 
+; Syntax error reading source at (REPL:44:20).
+; Unsupported escape character: \/
+clj꞉ex03.core꞉> 
+; Execution error (PatternSyntaxException) at java.util.regex.Pattern/error (Pattern.java:2028).
+; Illegal repetition near index 23
+\d+|[\w\-]+|"[^"\n]*"|{}()[].,;+-*/&|<>=~class|method|function|constructor|int|boolean|char|void|var|static|field|let|do|if|else|while|return|true|false|null|this|
+                       ^
+clj꞉ex03.core꞉> 
+; Syntax error reading source at (REPL:44:9).
+; Unsupported escape character: \}
+clj꞉ex03.core꞉> 
+; Syntax error reading source at (REPL:44:13).
+; Unsupported escape character: \[
+clj꞉ex03.core꞉> 
+; Syntax error reading source at (REPL:44:13).
+; Unsupported escape character: \[
+clj꞉ex03.core꞉> 
+; Syntax error reading source at (REPL:44:13).
+; Unsupported escape character: \[
+clj꞉ex03.core꞉> 
+#"\d+|[\w\-]+|\"[^\"\n]*\"|[{}()\[\]\.,;+\-*/&|<>=~]class|method|function|constructor|int|boolean|char|void|var|static|field|let|do|if|else|while|return|true|false|null|this|"
+clj꞉ex03.core꞉> 
+; Evaluating file: core.clj
+(nil)
+clj꞉ex03.core꞉> 
+#"\d+|[\w\-]+|\"[^\"\n]*\"|[{}()\[\]\.,;+\-*/&|<>=~]class|method|function|constructor|int|boolean|char|void|var|static|field|let|do|if|else|while|return|true|false|null|this|"
+clj꞉ex03.core꞉> 
+; Evaluating file: core.clj
+(nil)
+clj꞉ex03.core꞉> 
+#"\d+|[\w\-]+|\"[^\"\n]*\"|[{}()\[\]\.,;+\-*/&|<>=~]|class|method|function|constructor|int|boolean|char|void|var|static|field|let|do|if|else|while|return|true|false|null|this|"
+clj꞉ex03.core꞉> 
+; Evaluating file: core.clj
+; Error printing return value (ClassCastException) at clojure.core/re-matcher (core.clj:4838).
+; class java.lang.String cannot be cast to class java.util.regex.Pattern (java.lang.String and java.util.regex.Pattern are in module java.base of loader 'bootstrap')
+; Evaluation of file core.clj failed: class clojure.lang.ExceptionInfo
+clojure.main/repl (main.clj:442)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉ex03.core꞉> 
+; Evaluating file: core.clj
+; Error printing return value (ArityException) at clojure.lang.AFn/throwArity (AFn.java:429).
+; Wrong number of args (1) passed to: ex03.core/tokenize/fn--6701
+; Evaluation of file core.clj failed: class clojure.lang.ExceptionInfo
+clojure.main/repl (main.clj:442)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉ex03.core꞉> 
+("hello")
+clj꞉ex03.core꞉> 
+("function" "void" "main" "(" ")" "{" "var" "Array" "a" ";" "var" "int" "length" ";" "var" "int" "i" "," "sum" ";")
+clj꞉ex03.core꞉> 
+"function||void||main||(||)||{||var||Array||a||;||var||int||length||;||var||int||i||,||sum||;"
+clj꞉ex03.core꞉> 
+"function\nvoid\nmain\n(\n)\n{\nvar\nArray\na\n;\nvar\nint\nlength\n;\nvar\nint\ni\n,\nsum\n;"
+clj꞉ex03.core꞉> 
+; Syntax error compiling at (c:\Users\shoha\Desktop\SoftwarePrinciples\nand2tetris_clojure\ex03\src\ex03\core.clj:54:1).
+; Unable to resolve symbol: HOW in this context
+clj꞉ex03.core꞉> 
+; Execution error (ArityException) at ex03.core/tokenize (core.clj:23).
+; Wrong number of args (1) passed to: ex03.core/tokenize/fn--6701
+clj꞉ex03.core꞉> 
+; Execution error (ArityException) at ex03.core/tokenize (core.clj:23).
+; Wrong number of args (1) passed to: ex03.core/tokenize/fn--6701
+clj꞉ex03.core꞉> 
+; Execution error (ArityException) at ex03.core/tokenize (core.clj:23).
+; Wrong number of args (1) passed to: ex03.core/tokenize/fn--6701
+clj꞉ex03.core꞉> 
+; Execution error (ArityException) at ex03.core/tokenize (core.clj:23).
+; Wrong number of args (1) passed to: ex03.core/tokenize/fn--6701
+clj꞉ex03.core꞉> 
+; Execution error (ArityException) at ex03.core/tokenize (core.clj:23).
+; Wrong number of args (1) passed to: ex03.core/tokenize/fn--6701
+clj꞉ex03.core꞉> 
+; Execution error (ArityException) at ex03.core/tokenize (core.clj:23).
+; Wrong number of args (1) passed to: ex03.core/tokenize/fn--6701
+clj꞉ex03.core꞉> 
+; Execution error (ArityException) at ex03.core/eval6743 (form-init15316997710959523030.clj:57).
+; Wrong number of args (1) passed to: ex03.core/eval6743/fn--6746
+clj꞉ex03.core꞉> 
+; Execution error (ArityException) at ex03.core/eval6751 (form-init15316997710959523030.clj:57).
+; Wrong number of args (1) passed to: ex03.core/eval6751/fn--6754
+clj꞉ex03.core꞉> 
+("hello")
+clj꞉ex03.core꞉> 
+("hello" "i" "am" "213" "asd23")
+clj꞉ex03.core꞉> 
+; Execution error (ArityException) at ex03.core/eval6763 (form-init15316997710959523030.clj:57).
+; Wrong number of args (1) passed to: ex03.core/eval6763/fn--6766
+clj꞉ex03.core꞉> 
+; Execution error (ArityException) at ex03.core/eval6769 (form-init15316997710959523030.clj:57).
+; Wrong number of args (1) passed to: ex03.core/eval6769/fn--6770
+clj꞉ex03.core꞉> 
+"class"
+clj꞉ex03.core꞉> 
+; Evaluating file: core.clj
+(nil)
+clj꞉ex03.core꞉> 
+; Syntax error compiling at (c:\Users\shoha\Desktop\SoftwarePrinciples\nand2tetris_clojure\ex03\src\ex03\core.clj:52:3).
+; Unable to resolve symbol: The in this context
+clj꞉ex03.core꞉> 
+"\n\n\n\n\n\n\n/** Computes the average of a sequence of integers. */\nclass Main {\n    function void main() {\n        var Array a;\n        var int length;\n        var int i, sum;"
+clj꞉ex03.core꞉> 
+"hello"
+clj꞉ex03.core꞉> 
+; Evaluating file: core.clj
+(nil)
+clj꞉ex03.core꞉> 
+; Syntax error compiling at (c:\Users\shoha\Desktop\SoftwarePrinciples\nand2tetris_clojure\ex03\src\ex03\core.clj:64:1).
+; Unable to resolve symbol: getToken in this context
+clj꞉ex03.core꞉> 
+; Syntax error compiling at (c:\Users\shoha\Desktop\SoftwarePrinciples\nand2tetris_clojure\ex03\src\ex03\core.clj:64:1).
+; Unable to resolve symbol: getToken in this context
+clj꞉ex03.core꞉> 
+; Evaluating file: core.clj
+; Syntax error (ArityException) compiling at (C:\Users\shoha\Desktop\SoftwarePrinciples\nand2tetris_clojure\ex03\src\ex03\core.clj:63:1).
+; Wrong number of args (1) passed to: clojure.core/re-matches
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7652)
+ex03.core/eval6874 (form-init15316997710959523030.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7181)
+clojure.core/eval (core.clj:3202)
+clojure.core/eval (core.clj:3198)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1977)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉ex03.core꞉> 
+; Jacking in...
+; nREPL Connection was closed
+; Starting Jack-in Terminal: cmd.exe /d /c lein update-in :dependencies conj [nrepl,"0.9.0"] -- update-in :plugins conj [cider/cider-nrepl,"0.27.4"] -- update-in [:repl-options,:nrepl-middleware] conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉ex03.core꞉> 
+; Jack-in done.
+clj꞉ex03.core꞉> 
+; Evaluating file: core.clj
+; Syntax error (ArityException) compiling at (C:\Users\shoha\Desktop\SoftwarePrinciples\nand2tetris_clojure\ex03\src\ex03\core.clj:63:1).
+; Wrong number of args (1) passed to: clojure.core/re-matches
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7652)
+ex03.core/eval5817 (form-init12749082124369658451.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7181)
+clojure.core/eval (core.clj:3202)
+clojure.core/eval (core.clj:3198)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1977)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉ex03.core꞉> 
+; Evaluating file: core.clj
+"<identifier> hello </identifier>"
+clj꞉ex03.core꞉> 
+; Evaluating file: core.clj
+"<identifier> hello </identifier>"
+clj꞉ex03.core꞉> 
+; Evaluating file: core.clj
+(nil)
+clj꞉ex03.core꞉> 
+; Evaluating file: core.clj
+(nil)
+clj꞉ex03.core꞉> 
+; Syntax error compiling at (c:\Users\shoha\Desktop\SoftwarePrinciples\nand2tetris_clojure\ex03\src\ex03\core.clj:18:5).
+; Unable to resolve symbol: keywords in this context
+clj꞉ex03.core꞉> 
+; Syntax error compiling at (c:\Users\shoha\Desktop\SoftwarePrinciples\nand2tetris_clojure\ex03\src\ex03\core.clj:18:5).
+; Unable to resolve symbol: keywords in this context
+clj꞉ex03.core꞉> 
+; Evaluating file: core.clj
+(nil)
+clj꞉ex03.core꞉> 
+"class|method|function|constructor|int|boolean|char|void|var|this|static|field|let|do|if|else|while|return|true|false|null"
+clj꞉ex03.core꞉> 
+#'ex03.core/keywords
+clj꞉ex03.core꞉> 
+; Evaluating file: core.clj
+(nil)
+clj꞉ex03.core꞉> 
+; Evaluating file: core.clj
+; Error printing return value (ClassCastException) at ex03.core/getSymbolName (core.clj:21).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+; Evaluation of file core.clj failed: class clojure.lang.ExceptionInfo
+clojure.main/repl (main.clj:442)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉ex03.core꞉> 
+; Execution error (ClassCastException) at ex03.core/getSymbolName (core.clj:21).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉ex03.core꞉> 
+; Evaluating file: core.clj
+; Syntax error (ClassCastException) compiling at (C:\Users\shoha\Desktop\SoftwarePrinciples\nand2tetris_clojure\ex03\src\ex03\core.clj:70:1).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7652)
+ex03.core/eval6432 (form-init12749082124369658451.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7181)
+clojure.core/eval (core.clj:3202)
+clojure.core/eval (core.clj:3198)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:667)
+clojure.core/with-bindings* (core.clj:1977)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:437)
+clojure.main/repl (main.clj:458)
+clojure.main/repl (main.clj:368)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:833)
+clj꞉ex03.core꞉> 
+; Execution error (ClassCastException) at ex03.core/getSymbolName (core.clj:21).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉ex03.core꞉> 
+; Execution error (ClassCastException) at ex03.core/getSymbolName (core.clj:21).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉ex03.core꞉> 
+; Execution error (ClassCastException) at ex03.core/getSymbolName (core.clj:21).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉ex03.core꞉> 
+"&lt"
+clj꞉ex03.core꞉> 
+"&gt"
+clj꞉ex03.core꞉> 
+"clojure.core$symbol@5b2d5dae"
+clj꞉ex03.core꞉> 
+; Syntax error compiling at (c:\Users\shoha\Desktop\SoftwarePrinciples\nand2tetris_clojure\ex03\src\ex03\core.clj:75:3).
+; Unable to resolve symbol: aplly in this context
+clj꞉ex03.core꞉> 
+; Execution error (IllegalArgumentException) at ex03.core/eval6490 (form-init12749082124369658451.clj:75).
+; Don't know how to create ISeq from: clojure.core$symbol
+clj꞉ex03.core꞉> 
+#function[clojure.core/symbol]
+clj꞉ex03.core꞉> 
+#function[clojure.core/symbol]
+clj꞉ex03.core꞉> 
+; Evaluating file: core.clj
+(nil)
+clj꞉ex03.core꞉> 
+; Evaluating file: core.clj
+(nil)
+clj꞉ex03.core꞉> 
+; Evaluating file: core.clj
+(nil)
+clj꞉ex03.core꞉> 
+; Evaluating file: core.clj
+(nil)
+clj꞉ex03.core꞉> 
