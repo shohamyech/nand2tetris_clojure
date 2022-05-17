@@ -1,6 +1,6 @@
-(ns ex03.core-test
+(ns ex04.core-test
   (:require [clojure.test :refer :all]
-            [ex03.core :refer :all]))
+            [ex04.core :refer :all]))
 
 (deftest a-test
   (testing "FIXME, I fail."
