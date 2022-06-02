@@ -19,7 +19,7 @@
        ))
 
 (defn -main [path]
-  
+
   ;checking folder exists
   (when-not (.exists (java.io.File. path))
     (println "Invalid path")
@@ -31,4 +31,5 @@
      (map str)                                           ;map to files path as string
      (filter #(re-find #".jack$" %))                     ;filter jack files
      (map #(spit (getVmFileName %) (to-vm %)))           ;write to output file
+     (println)
      ))
