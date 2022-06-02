@@ -46,9 +46,6 @@
        (#(assoc % :var_symb (+ (% :var_symb) 1)))
        (#(assoc dict :func_tbl %))))
 
-
-;((dict :class_tbl) var)
-
 (defn get-var-type [var dict]
   (get ((dict :func_tbl) var) :type (get ((dict :class_tbl) var) :type nil))) ;
 
@@ -74,19 +71,3 @@
        ((dict :class_tbl) :name) "."
        ((dict :func_tbl) :name) " "
        ((dict :func_tbl) :var_symb)))
-
-(def scores {:func_tbl {"a"  {:kind 1 :type 2 :count 3}
-                        "b"   {:kind 1 :type 2 :count 3}
-                        "c" {:kind 1 :type 2 :count 3}}
-             :class_tbl {"d"  {:kind 1 :type 2 :count 3}
-                        "e"   {:kind 1 :type 2 :count 3}
-                        "f" {:kind 1 :type 2 :count 3}}})
-
-;(push-var "a" scores)
-;(get-var-type "d" scores)
-;(get-var-kind "Bob" scores)
-
-;; (def dict1 {:in "file" :out "" :class_tbl {} :func_tbl {}})
-;; (def cla (init-class-tbl dict1 "test"))
-
-;; (add-static cla "int" "x")

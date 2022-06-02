@@ -389,27 +389,4 @@
 (defn parse-file [file]
   (->> {:in file :out "" :class_tbl {} :func_tbl {}}
        (CompileClass)        ;calling root token
-       (#(get % :out))
-       ;(seq)
-       ))
-
-(def f '("<keyword> class </keyword>" "<identifier> Main </identifier>"
-         "<symbol> { </symbol>" "<keyword> field </keyword>"
-         "<keyword> int </keyword>" "<identifier> a </identifier>"
-         "<symbol> ; </symbol>" "<keyword> static </keyword>" "<keyword> int </keyword>" "<identifier> b </identifier>" 
-         "<symbol> ; </symbol>" "<keyword> function </keyword>" "<keyword> void </keyword>" "<identifier> main </identifier>" "<symbol> ( </symbol>" "<keyword> int </keyword>" "<identifier> c </identifier>" 
-         "<symbol> , </symbol>" "<keyword> char </keyword>" "<identifier> d </identifier>" "<symbol> ) </symbol>" "<symbol> { </symbol>" "<keyword> var </keyword>" "<identifier> Array </identifier>" "<identifier> a </identifier>" 
-         "<symbol> ; </symbol>" "<keyword> var </keyword>" "<keyword> int </keyword>" "<identifier> length </identifier>" "<symbol> ; </symbol>" "<keyword> var </keyword>" "<keyword> int </keyword>" "<identifier> i </identifier>"
-         "<symbol> , </symbol>" "<identifier> sum </identifier>" "<symbol> ; </symbol>" "<keyword> let </keyword>" "<identifier> a </identifier>" "<symbol> = </symbol>" "<identifier> Array </identifier>" "<symbol> . </symbol>" "<identifier> new </identifier>"
-         "<symbol> ( </symbol>" "<identifier> length </identifier>" "<symbol> ) </symbol>" "<symbol> ; </symbol>" "<keyword> let </keyword>" "<identifier> i </identifier>" "<symbol> = </symbol>" "<integerConstant> 0 </integerConstant>"
-         "<symbol> ; </symbol>" "<keyword> return </keyword>" "<symbol> ; </symbol>"))
-
-;(parse-file f)
-
-;; (defn sim [x] (+ 1 #break x))
-
-;; (defn a []
-;;   (->> '("ad " "sd" "asd ") 
-;;         (str #break "asdasd"))
-;;   )
-;; (sim 2)
+       (#(get % :out))))

@@ -32,5 +32,3 @@
      (filter #(re-find #".jack$" %))                     ;filter jack files
      (map #(spit (getVmFileName %) (to-vm %)))           ;write to output file
      ))
-
-(-main "C:\\Users\\shoha\\Desktop\\test")
