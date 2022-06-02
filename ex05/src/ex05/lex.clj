@@ -1,4 +1,4 @@
-(ns ex04.lex
+(ns ex05.lex
   (:require [clojure.string :as str])
   (:require [clojure.java.io :as io]))
 
@@ -43,27 +43,7 @@
 
 (defn tokenize [content]
   (->> content
-       (#(str/replace % comment-expression ""))        ;removing comments
+       (#(str/replace % comment-expression ""))               ;removing comments
        (re-seq token-expression)                              ;spliting to tokens
        (map getToken)                                         ;mapping to xml tags
-       (str/join "\n")                                        ;join back
-       (#(str "<tokens>\n" % "\n</tokens>\n"))))              ;surround with tokens xml tag
-
-
-(defn getJackFileName [file]
-  (str/replace file #".jack" "T.xml"))
-
-(defn tokenize-files [path]
-  ;checking folder exists
-  (when-not (.exists (java.io.File. path))
-    (println "Invalid path")
-    (System/exit 0))
-
-(->> (io/file path)                                              ;get folder file obj
-     (file-seq)                                                 ;get all files from folder
-     (filter #(.isFile %))                                      ;filter files
-     (map str)                                                  ;map to files path as string
-     (filter #(re-find #".jack$" %))                            ;filter jack files
-     (map #(vector (getJackFileName %) (tokenize (slurp %))))   ;map to new file name & tokenized file
-     (map #(spit (first %) (last %)))                           ;write to output file
-     ))
+       ))              
